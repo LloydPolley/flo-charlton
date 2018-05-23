@@ -1,0 +1,102 @@
+html,
+body {
+  font-family: 'Playfair Display', serif;
+  font-weight: 300; }
+
+.landing-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .landing-title a {
+    text-decoration: none;
+    color: black;
+    transition: 1s all linear; }
+  .landing-title a:hover {
+    text-decoration: underline; }
+
+.closebtn,
+.openbtn {
+  top: 0;
+  left: 2%;
+  font-size: 2em;
+  text-decoration: none; }
+
+.closebtn {
+  position: absolute; }
+
+.openbtn {
+  position: fixed;
+  z-index: 2; }
+
+.navigation-side {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0s;
+  box-sizing: border-box; }
+  .navigation-side #logo {
+    margin-top: 5em;
+    max-width: 75%;
+    max-height: 400px;
+    margin: auto;
+    display: block; }
+  .navigation-side .nav-links {
+    display: flex;
+    flex-direction: column;
+    margin: 2em; }
+    .navigation-side .nav-links a {
+      color: black;
+      text-decoration: none;
+      margin: .3em; }
+    .navigation-side .nav-links ul {
+      padding: 0;
+      margin: 0;
+      margin-left: .7em; }
+      .navigation-side .nav-links ul li {
+        text-transform: lowercase;
+        list-style-type: none;
+        list-style: none;
+        font-weight: 300;
+        margin: .3em; }
+
+@media (min-width: 600px) {
+  .navigation-side .nav-links {
+    width: 50%;
+    margin: 0 auto; }
+
+  .move-over {
+    max-width: 500px;
+    margin: 0 auto; } }
+@media (min-width: 1000px) {
+  .navigation-side {
+    margin-top: 5em; }
+    .navigation-side .nav-links {
+      width: 100%;
+      margin: 2em; }
+
+  .move-over {
+    max-width: 800px;
+    margin-left: 200px; }
+
+  .closebtn,
+  .openbtn {
+    display: none; }
+
+  .navigation-side {
+    width: 200px; } }
+@media (min-width: 1100px) {
+  .navigation-side {
+    width: 250px; }
+
+  .move-over {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 300px; } }
+
+/*# sourceMappingURL=nav.css.map */

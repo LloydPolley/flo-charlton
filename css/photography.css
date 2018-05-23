@@ -1,0 +1,117 @@
+.title {
+  text-align: center; }
+  .title h1 {
+    text-align: center;
+    margin: 2.5em 0;
+    font-weight: 500; }
+  .title a {
+    text-align: center;
+    margin-top: 5em; }
+
+.photography-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .photography-grid .port,
+  .photography-grid .land {
+    box-sizing: border-box;
+    padding: .2em; }
+    .photography-grid .port img,
+    .photography-grid .land img {
+      max-width: 100%;
+      display: block;
+      object-fit: fill; }
+  .photography-grid .port {
+    flex-basis: 50%; }
+  .photography-grid .land {
+    flex-basis: 100%; }
+
+.photo-select {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: 0 auto; }
+  .photo-select .round {
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid black;
+    display: block;
+    box-sizing: border-box; }
+  .photo-select .element {
+    flex-basis: 50%;
+    padding: 1em;
+    position: relative;
+    box-sizing: border-box; }
+    .photo-select .element p {
+      text-align: center; }
+
+.container-over {
+  position: relative; }
+  .container-over img {
+    width: 100%;
+    height: 100%; }
+  .container-over .overlay {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: auto;
+    opacity: 0;
+    transition: .1s ease;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50%; }
+  .container-over p {
+    position: absolute;
+    color: black;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-transform: uppercase; }
+
+.container-over:hover .overlay {
+  opacity: 1; }
+
+@media (min-width: 600px) {
+  .photography-grid .port,
+  .photography-grid .land {
+    box-sizing: border-box;
+    padding: .5em; }
+    .photography-grid .port img,
+    .photography-grid .land img {
+      max-width: 100%;
+      display: block;
+      object-fit: fill; }
+  .photography-grid .port {
+    flex-basis: 50%; }
+  .photography-grid .land {
+    flex-basis: 100%; }
+
+  .photo-select .element {
+    flex-basis: 30%;
+    padding: .5em; } }
+@media (min-width: 1000px) {
+  .title h1 {
+    margin-top: 5em; }
+
+  .container-photo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; }
+    .container-photo .photography-grid {
+      flex-basis: 50%; }
+      .container-photo .photography-grid .port {
+        flex-basis: 50%; }
+      .container-photo .photography-grid .land {
+        flex-basis: 100%; }
+
+  .container-over p {
+    font-size: 1.5em; } }
+
+/*# sourceMappingURL=photography.css.map */
